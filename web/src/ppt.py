@@ -6,7 +6,7 @@ from pptx import Presentation
 from pptx.util import Pt
 from bs4 import BeautifulSoup
 
-from animation import animation, before, after
+from .animation import animation, before, after
 
 def produce_pptx():
     filename = "notes.txt"
@@ -74,7 +74,3 @@ def produce_pptx():
     os.chdir("../")
     shutil.rmtree("temp")
     os.remove("test.pptx")
-
-if __name__ == "__main__":
-    produce_pptx()
-    print("ppt已生成至res.pptx！")
