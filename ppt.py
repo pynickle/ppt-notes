@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 
 from animation import animation, before, after
 
-filename = "test.txt"
+filename = "notes.txt"
 rows_in_page = 10
 
 with open(filename, "r", encoding="utf-8") as f:
